@@ -33,21 +33,23 @@ body{
 /* regole header */
 header{
   background-color: rgb(14, 44, 80);
-  position: relative;
+  background-image: url("../img/background-header.png");
+  background-repeat: no-repeat;
+  background-size: 1100px;
+  background-position: 100% 100%;
 }
 
 nav{
   width: 80%;
   padding-top: 1%;
   display: inline-block;
-  vertical-align: bottom;
 }
 
 #logo{
   width: 14%;
   padding-top: 1%;
   padding-right: 5%;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 nav li{
@@ -59,13 +61,23 @@ nav a{
   color: #fff;
 }
 
-li:nth-child(5){
+li:last-child{
   margin-left: 13%;
   margin-right: 2%;
 }
 
 .marginright{
   margin-right: 2%;
+}
+
+.listfloat{
+  float: left;
+  width: 70%;
+}
+
+.buttonfloat{
+  float: right;
+  width: 30%;
 }
 
 .button.blue{
@@ -77,18 +89,6 @@ li:nth-child(5){
 #strutturapianofirst{
   padding: 10px 8px;
   margin-left: 5px;
-}
-
-.imgheader{
-  width: 64%;
-  height: 76%;
-  background-image: url("../img/background-header.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .sezioneheader>h1{
@@ -201,29 +201,28 @@ footer{
   background-color: rgb(205, 205, 205);
 }
 
-footer>span{
+.textleft{
+  float: left;
   font-size: 30px;
   font-weight: 500;
-  margin-left: 7%;
+  line-height: 170px;
 }
 
-.contenitoreinfofooter{
-  display: inline-block;
-  margin-left: 60%;
-  padding: 40px 0;
-  vertical-align: middle;
+.textright{
+  float: right;
+  line-height: 170px;
 }
 
-.contenitoreinfofooter>span, .contenitoreinfofooter>select{
+.textright span,.textright select{
   color: rgb(116, 116, 116);
 }
 
-.contenitoreinfofooter>span{
+.textright span{
   font-size: 20px;
   margin-right: 24px;
 }
 
-.contenitoreinfofooter>select{
+.textright select{
   font-size: 25px;
   background-color: inherit;
   border: none;
@@ -237,8 +236,7 @@ footer>span{
 }
 
 .button.green.help{
-  display: block;
-  margin-top: 10px;
   margin-left: 78%;
   padding: 12px 6px;
+  vertical-align: 62px;
 }
