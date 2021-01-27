@@ -4,3 +4,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+  margin: 10%;
+}
+
+/* regole header */
+header{
+  background-color: rgb(14, 44, 80);
+  /* regole debug */
+  height: 300px;
+}
+
+/* regole corpo centrale */
+.title.main{
+  background-color: rgb(205, 205, 205);
+  /* regole debug */
+  height: 100px;
+  margin-bottom: 5%;
+}
+
+.contentmain{
+  float: left;
+}
+
+.contentmain.first{
+  /* regole debug */
+  height: 200px;
+  width: 30%;
+  background-color: red;
+}
+
+.contentmain.central{
+  /* regole debug */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contentmain.second{
+  /* regole debug */
+  height: 200px;
+  width: 40%;
+  background-color: red;
+}
+
+.contentmain.second.left{
+  /* regole debug */
+  margin-right: 20%;
+}
+
+hr{
+  /* regole debug */
+  margin:0 3% 5% 3%;
+}
+
+footer{
+  background-color: rgb(205, 205, 205);
+  /* regole debug */
+  height: 100px;
+}
