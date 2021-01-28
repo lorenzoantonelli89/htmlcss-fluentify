@@ -30,6 +30,11 @@ body{
   border: 1px solid rgb(113, 178, 1);
 }
 
+.link{
+  text-decoration: none;
+  color: #fff;
+}
+
 /* regole header */
 header{
   background-color: rgb(14, 44, 80);
@@ -37,6 +42,11 @@ header{
   background-repeat: no-repeat;
   background-size: 1100px;
   background-position: 100% 100%;
+}
+
+.row.nav{
+  width: 100%;
+  margin: 33px auto;
 }
 
 nav{
@@ -54,11 +64,6 @@ nav{
 
 nav li{
   display: inline-block;
-}
-
-nav a{
-  text-decoration: none;
-  color: #fff;
 }
 
 li:last-child{
@@ -124,9 +129,9 @@ li:last-child{
   color: rgb(117, 117, 117);
 }
 
-.row{
+.row.main{
   width: 80%;
-  margin: 50px auto;
+  margin: 200px auto;
 }
 
 /* prima sezione */
@@ -189,12 +194,13 @@ li:last-child{
   font-size: 20px;
 }
 
-.contentmain.second{
+.contentmain.second.left{
   width: 45%;
+  margin-right: 20%;
 }
 
-.contentmain.second.left{
-  margin-right: 10%;
+.contentmain.second.right{
+  width: 35%;
 }
 
 footer{
@@ -205,12 +211,15 @@ footer{
   float: left;
   font-size: 30px;
   font-weight: 500;
-  line-height: 170px;
+  width: 30%;
+  margin-left: 20%;
+  margin-top: 100px;
 }
 
 .textright{
   float: right;
-  line-height: 170px;
+  width: 40%;
+  margin-top: 100px;
 }
 
 .textright span,.textright select{
@@ -236,7 +245,8 @@ footer{
 }
 
 .button.green.help{
-  margin-left: 78%;
+  margin-left: 37%;
   padding: 12px 6px;
-  vertical-align: 62px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
